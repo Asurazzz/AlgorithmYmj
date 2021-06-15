@@ -1,4 +1,4 @@
-package com.ymj.novice.class01;
+package com.test.str.test01.class01;
 
 /**
  * @author : yemingjie
