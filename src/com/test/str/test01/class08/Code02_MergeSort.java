@@ -35,7 +35,7 @@ public class Code02_MergeSort {
         while (p1 <= M && p2 <= R) {
             help[i++] = arr[p1] <= arr[p2] ? arr[p1++] : arr[p2++];
         }
-        // 要么p1越界，要么p2越界
+        // 要么p1越界，要么p2越界、
         // 不可能出现的情况：共同越界
         while (p1 <= M) {
             help[i++] = arr[p1++];
