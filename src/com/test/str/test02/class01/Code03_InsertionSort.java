@@ -17,7 +17,13 @@ public class Code03_InsertionSort {
             }
         }
     }
-    // i和j是一个位置的话，会出错
+
+    /**
+     * i和j是一个位置的话，会出错
+     * @param arr
+     * @param i
+     * @param j
+     */
     public static void swap(int[] arr, int i, int j) {
         arr[i] = arr[i] ^ arr[j];
         arr[j] = arr[i] ^ arr[j];
