@@ -19,7 +19,7 @@ public class Code03_InsertionSort {
     }
 
     /**
-     * i和j是一个位置的话，会出错
+     * i和j是一个位置的话，会出错，会把数字变为0
      * @param arr
      * @param i
      * @param j
