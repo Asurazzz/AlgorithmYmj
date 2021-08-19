@@ -48,4 +48,36 @@ public class Code02_MergeSort {
         }
     }
 
+
+    // 非递归方法实现
+    public static void mergeSort2(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        int N = arr.length;
+        // 步长
+        int mergeSize = 1;
+        while (mergeSize < N) {
+            // 当前左组的第一个位置
+            int L = 0;
+            while (L < N) {
+                // L...M 左组（mergeSize）
+                int M = L + mergeSize - 1;
+                // 左组不够就跳出，继续下一次
+                if (M >= N) {
+                    break;
+                }
+                // L...M   M+1...R
+                int R = Math.min(M + mergeSize, N - 1);
+                merge(arr, L, M, R);
+                L = R + 1;
+            }
+            // 防止溢出
+            if (mergeSize > N/2) {
+                break;
+            }
+            mergeSize <<= 1;
+        }
+    }
+
 }
