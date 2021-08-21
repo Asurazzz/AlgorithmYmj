@@ -1,5 +1,7 @@
 package com.test.str.test01.class08;
 
+import java.util.Arrays;
+
 /**
  * @Classname Code02_MergeSort
  * @Description TODO
@@ -7,6 +9,14 @@ package com.test.str.test01.class08;
  * @Created by yemingjie
  */
 public class Code02_MergeSort {
+
+
+    public static void main(String[] args) {
+        int[] arr = {9,8,7,6,5,4,3,2,1};
+        mergeSort1(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
     // 递归方法实现
     public static void mergeSort1(int[] arr) {
         if (arr == null || arr.length < 2) {
