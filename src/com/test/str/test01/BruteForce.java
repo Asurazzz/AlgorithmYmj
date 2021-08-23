@@ -21,7 +21,7 @@ public class BruteForce {
         if (haylen == 0) {
             return 0;
         }
-        // 主 串
+        // 主串
         for (int i = 0; i < haylen - needlen + 1; i++) {
             int j;
             // 模式串
