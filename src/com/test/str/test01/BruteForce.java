@@ -14,6 +14,7 @@ public class BruteForce {
     public static int strStr(String haystack, String needle) {
         int haylen = haystack.length();
         int needlen = needle.length();
+
         // 特殊情况
         if (haylen < needlen) {
             return -1;
