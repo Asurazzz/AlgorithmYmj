@@ -47,6 +47,19 @@ public class Solution3 {
     }
 
 
+
+    public static ListNode reverseList(ListNode head) {
+        // 1. 递归终止条件
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode p = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
+    }
+
+
     public static void main(String[] args) {
         ListNode listNode = new ListNode(1);
         listNode.next = new ListNode(2);
@@ -54,7 +67,7 @@ public class Solution3 {
         listNode.next.next.next = new ListNode(4);
         listNode.next.next.next.next = new ListNode(5);
         System.out.println(listNode);
-        ListNode listNode1 = reverseList2(listNode);
+        ListNode listNode1 = reverseList(listNode);
         System.out.println(listNode1);
     }
 
