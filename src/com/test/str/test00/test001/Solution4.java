@@ -1,4 +1,4 @@
-package com.test.str.test00;
+package com.test.str.test00.test001;
 
 /**
  * 字符串转换成整数的功能
