@@ -1,4 +1,4 @@
-package com.test.str.test00;
+package com.test.str.test00.test001;
 
 /**
  * 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
