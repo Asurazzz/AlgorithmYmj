@@ -136,6 +136,7 @@ public class Code03_CardsInLine {
                 R++;
             }
         }
+
         return Math.max(fmap[0][N - 1], gmap[0][N - 1]);
     }
 
