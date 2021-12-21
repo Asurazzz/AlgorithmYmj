@@ -16,11 +16,12 @@ package com.test.str.test00.test002;
  * 12,2,5,8
  * 12,25,8
  *
+ * @author admin
  */
 public class Solution3 {
 
     public static void main(String[] args) {
-        int i = translateNum(8);
+        int i = translateNum(25);
         System.out.println(i);
     }
 
@@ -28,7 +29,7 @@ public class Solution3 {
 
         String s = String.valueOf(num);
         int a = 1, b = 1;
-        for (int i = 2; i < s.length(); i++) {
+        for (int i = 2; i <= s.length(); i++) {
             String tmp = s.substring(i -2, i);
             int c = tmp.compareTo("10") >= 0 && tmp.compareTo("25") <= 0 ? a + b : a;
             b = a;
